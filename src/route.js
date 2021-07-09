@@ -18,8 +18,8 @@ route.get('/room/:room', (req, res) => {
 
 
 // Implicitamente o index em QuestionController está recebendo REQ e RES
-route.post('/room/:room/:question/:action', QuestionController.index);
-route.post('/room/create-room', RoomController.create);
+route.post('/question/:room/:question/:action', QuestionController.index);
+route.post('/create-room', RoomController.create);
 
 
 module.exports = route;
