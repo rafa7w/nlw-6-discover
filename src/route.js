@@ -14,6 +14,7 @@ route.get('/create-pass', (req, res) => {
 
 route.post('/create-room', RoomController.create);
 route.get('/room/:room', RoomController.open);
+route.post('/enterroom', RoomController.enter);
 
 
 // Implicitamente o index em QuestionController está recebendo REQ e RES
